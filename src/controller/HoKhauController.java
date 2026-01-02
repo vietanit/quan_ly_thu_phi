@@ -81,8 +81,15 @@ public class HoKhauController implements Initializable {
 
 		// Thiet lap Table views
 		colMaHoKhau.setCellValueFactory(new PropertyValueFactory<HoKhauModel, String>("maHo"));
-		colMaChuHo.setCellValueFactory((CellDataFeatures<HoKhauModel, String> p) -> new ReadOnlyStringWrapper(
-				mapIdToTen.get(mapMahoToId.get(p.getValue().getMaHo())).toString()));
+		colMaChuHo.setCellValueFactory((CellDataFeatures<HoKhauModel, String> p) -> {
+			Integer maHo = p.getValue().getMaHo();
+			Integer ownerId = mapMahoToId.get(maHo);
+			String ownerName = "";
+			if (ownerId != null && mapIdToTen.get(ownerId) != null) {
+				ownerName = mapIdToTen.get(ownerId);
+			}
+			return new ReadOnlyStringWrapper(ownerName);
+		});
 		colSoThanhVien.setCellValueFactory(new PropertyValueFactory<HoKhauModel, String>("soThanhvien"));
 		colDiaChi.setCellValueFactory(new PropertyValueFactory<HoKhauModel, String>("diaChi"));
 		tvHoKhau.setItems(listValueTableView);

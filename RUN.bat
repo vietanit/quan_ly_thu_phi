@@ -22,7 +22,7 @@ echo.
 REM Chạy ứng dụng
 set "PATH_TO_JAVA=%JAVA_HOME%\bin"
 echo [Đang khởi động...]
-"%PATH_TO_JAVA%\java" --module-path "%JAVAFX_PATH%" --add-modules javafx.controls,javafx.fxml -cp "out;%MYSQL_CONNECTOR%" application.Main
+"%PATH_TO_JAVA%\java" --module-path "%JAVAFX_PATH%" --add-modules javafx.controls,javafx.fxml -cp "out;bin;%MYSQL_CONNECTOR%" application.Main
 
 if errorlevel 1 (
     echo.
