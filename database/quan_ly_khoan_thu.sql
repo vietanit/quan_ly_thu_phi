@@ -18,8 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `quan_ly_khoan_thu`
+-- Phần sửa lỗi: Tạo và Chọn Database
 --
+CREATE DATABASE IF NOT EXISTS `quan_ly_khoan_thu` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci;
+USE `quan_ly_khoan_thu`;
 
 -- --------------------------------------------------------
 

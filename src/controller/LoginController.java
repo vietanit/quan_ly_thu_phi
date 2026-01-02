@@ -26,7 +26,7 @@ public class LoginController {
 		String pass = tfPassword.getText();
 		
 		// check username and password
-		if(!name.equals("admin") || !pass.equals("admin")) {
+		if(!name.equals("admin") || !pass.equals("1")) {
 			Alert alert = new Alert(AlertType.WARNING, "Bạn nhập sai mật khẩu rồi hihi!", ButtonType.OK);
 			alert.setHeaderText(null);
 			alert.showAndWait();

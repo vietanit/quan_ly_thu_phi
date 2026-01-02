@@ -34,6 +34,10 @@
                </font>
             </Label>
          </children></Pane>
-      <Label layoutX="435.0" layoutY="559.0" text="\@Copyright Nhóm15" />
+      <Label layoutX="435.0" layoutY="559.0" text="\@Copyright Nhóm1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
