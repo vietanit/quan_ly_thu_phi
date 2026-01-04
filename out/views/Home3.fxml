@@ -64,5 +64,10 @@
             <BorderPane fx:id="borderPane" prefHeight="600.0" prefWidth="625.0" />
          </children>
       </HBox>
+      <HBox alignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="10.0">
+         <children>
+            <Button fx:id="btnLogout" text="Đăng xuất" onAction="#handleLogout" styleClass="button3" />
+         </children>
+      </HBox>
    </children>
 </AnchorPane>

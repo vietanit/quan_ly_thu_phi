@@ -8,6 +8,7 @@ D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\MainController.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\NhanKhauController.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\NopTienController.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\ThongKeController.java
+D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\ThongKeDetailsController.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\UserPaymentController.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\hokhau\AddHoKhau.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\hokhau\UpdateHoKhau.java
@@ -23,6 +24,7 @@ D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\HoKhauModel.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\KhoanThuModel.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\NhanKhauModel.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\NopTienModel.java
+D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\OwnerInfo.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\QuanHeModel.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\UserSession.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\UsersModel.java

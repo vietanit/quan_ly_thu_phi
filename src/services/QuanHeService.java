@@ -65,4 +65,20 @@ public class QuanHeService {
 		return list;
 	}
 
+	// Get MaHo by member ID (IDThanhVien). Returns -1 if not found.
+	public int getMaHoByIdThanhVien(int idThanhVien) throws ClassNotFoundException, SQLException {
+		int maHo = -1;
+		Connection connection = MysqlConnection.getMysqlConnection();
+		String query = "SELECT MaHo FROM quan_he WHERE IDThanhVien = ? LIMIT 1";
+		PreparedStatement preparedStatement = (PreparedStatement) connection.prepareStatement(query);
+		preparedStatement.setInt(1, idThanhVien);
+		ResultSet rs = preparedStatement.executeQuery();
+		if (rs.next()) {
+			maHo = rs.getInt("MaHo");
+		}
+		preparedStatement.close();
+		connection.close();
+		return maHo;
+	}
+
 }

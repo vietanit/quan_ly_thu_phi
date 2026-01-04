@@ -7,13 +7,15 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThongKeController">
    <children>
-      <TableView fx:id="tvThongKe" layoutX="13.0" layoutY="178.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
-        <columns>
-            <TableColumn fx:id="colTenPhi" prefWidth="280.0" text="Tên phí" />
-            <TableColumn fx:id="colTongSoTien" prefWidth="324.0" text="Tổng số tiền " />
-        </columns>
-      </TableView>
-      <ComboBox fx:id="cbChooseSearch" layoutX="10.0" layoutY="42.0" prefHeight="39.0" prefWidth="224.0" />
-      <Button layoutX="258.0" layoutY="42.0" mnemonicParsing="false" onAction="#loc" text="Lọc" />
+         <TableView fx:id="tvThongKe" layoutX="13.0" layoutY="178.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+            <columns>
+                  <TableColumn fx:id="colTenPhi" prefWidth="260.0" text="Tên phí" />
+                  <TableColumn fx:id="colSoHoDaDong" prefWidth="170.0" text="Số hộ đã đóng" />
+                  <TableColumn fx:id="colSoHoChuaDong" prefWidth="170.0" text="Số hộ chưa đóng" />
+            </columns>
+         </TableView>
+         <ComboBox fx:id="cbChooseSearch" layoutX="10.0" layoutY="42.0" prefHeight="39.0" prefWidth="224.0" />
+         <Button layoutX="258.0" layoutY="42.0" mnemonicParsing="false" onAction="#loc" text="Lọc" />
+         <Button fx:id="btnShowDetails" layoutX="330.0" layoutY="42.0" mnemonicParsing="false" onAction="#showDetails" text="Chi tiết" />
    </children>
 </AnchorPane>

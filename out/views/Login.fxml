@@ -23,6 +23,8 @@
                      <font>
                         <Font size="20.0" />
                      </font></PasswordField>
+                  <RadioButton fx:id="rbAdmin" layoutX="163.0" layoutY="275.0" mnemonicParsing="false" text="Admin" />
+                  <RadioButton fx:id="rbUser" layoutX="260.0" layoutY="275.0" mnemonicParsing="false" text="User" />
                   <TextField fx:id="tfUsername" layoutX="163.0" layoutY="175.0" prefHeight="39.0" prefWidth="300.0" promptText="Username">
                      <font>
                         <Font size="20.0" />

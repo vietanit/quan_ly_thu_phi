@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThongKeDetailsController">
+   <children>
+      <VBox spacing="10.0" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.bottomAnchor="10.0">
+         <children>
+            <Label text="Danh sách hộ đã đóng" />
+            <TableView fx:id="tvDaDong" prefHeight="150.0">
+               <columns>
+                  <TableColumn fx:id="colMaHoDaDong" text="Mã hộ" prefWidth="80.0" />
+                  <TableColumn fx:id="colTenDaDong" text="Chủ hộ" prefWidth="180.0" />
+                  <TableColumn fx:id="colCmndDaDong" text="CMND" prefWidth="140.0" />
+                  <TableColumn fx:id="colSdtDaDong" text="SĐT" prefWidth="120.0" />
+               </columns>
+            </TableView>
+            <Label text="Danh sách hộ chưa đóng" />
+            <TableView fx:id="tvChuaDong" prefHeight="150.0">
+               <columns>
+                  <TableColumn fx:id="colMaHoChuaDong" text="Mã hộ" prefWidth="80.0" />
+                  <TableColumn fx:id="colTenChuaDong" text="Chủ hộ" prefWidth="180.0" />
+                  <TableColumn fx:id="colCmndChuaDong" text="CMND" prefWidth="140.0" />
+                  <TableColumn fx:id="colSdtChuaDong" text="SĐT" prefWidth="120.0" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
