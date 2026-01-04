@@ -16,6 +16,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.ProgressIndicator;
 import javafx.scene.layout.BorderPane;
@@ -80,8 +81,17 @@ public class HomeController implements Initializable {
 			Pane login = FXMLLoader.load(getClass().getResource("/views/Main.fxml"));
 			borderPane.setCenter(login);
 			if (btnLogout != null) btnLogout.setVisible(true);
-		} catch (IOException e) {
+		} catch (Exception e) {
+			// Catch any exception to avoid breaking the whole home view when center fails to load
 			e.printStackTrace();
+			// Fallback: show a simple message so the UI is not empty
+			Pane fallback = new Pane();
+			Label msg = new Label("Không thể tải trang chủ");
+			msg.setLayoutX(20);
+			msg.setLayoutY(20);
+			fallback.getChildren().add(msg);
+			borderPane.setCenter(fallback);
+			if (btnLogout != null) btnLogout.setVisible(true);
 		}
 
 	}

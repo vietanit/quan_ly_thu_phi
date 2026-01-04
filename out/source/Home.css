@@ -1,7 +1,7 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 
 .pane {
-	-fx-background-color : #808080;
+    -fx-background-color : #3B5998; /* dark blue sidebar */
 }
 
   
@@ -23,32 +23,32 @@
 
 .button2
 {
--fx-background-color :  #707070;
--fx-background-radius :  20;
+    -fx-background-color :  #2E7DB9; /* medium blue */
+    -fx-background-radius :  20;
 }
 .button2:hover
 {
--fx-background-color : #808080 ;
--fx-background-radius :  20;
+    -fx-background-color : #3B82C6 ;
+    -fx-background-radius :  20;
 }
 .button2:pressed
 {
--fx-background-color : #505050 ;
--fx-background-radius :  20;
+    -fx-background-color : #1F5F93 ;
+    -fx-background-radius :  20;
 }
 
 .button3
 {
-    -fx-background-color : #707070;
+    -fx-background-color : #4A90E2; /* primary blue for action buttons */
     -fx-background-radius :  0 0 0 0;
 }
 .button3:hover
 {
-    -fx-background-color : #808080 ;
+    -fx-background-color : #5AA3EF ;
 }
 .button3:pressed
 {
-    -fx-background-color : #505050 ;
+    -fx-background-color : #3579C4 ;
 }
 
 .button4

@@ -14,7 +14,7 @@
          <children>
             <VBox prefHeight="600.0" prefWidth="183.0" spacing="30.0" styleClass="pane" stylesheets="@../source/Home.css">
                <children>
-                  <Button mnemonicParsing="false" onAction="#setTrangChu" prefHeight="133.0" prefWidth="179.0" style="-fx-background-color: #707070;" text="Trang chủ" textFill="WHITE">
+                  <Button mnemonicParsing="false" onAction="#setTrangChu" prefHeight="133.0" prefWidth="179.0" style="-fx-background-color: #4A90E2;" text="Trang chủ" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="25.0" />
                      </font>

@@ -5,11 +5,11 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #e4e4e4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserPaymentController">
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #e8f4f8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserPaymentController">
    <children>
       <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="700.0" prefWidth="1000.0">
          <top>
-            <VBox prefHeight="60.0" prefWidth="1000.0" style="-fx-background-color: #707070;">
+            <VBox prefHeight="60.0" prefWidth="1000.0" style="-fx-background-color: #4A90E2;">
                <children>
                   <Label prefHeight="60.0" prefWidth="1000.0" text="Quản Lý Thanh Toán Khoản Phí" textFill="WHITE" alignment="CENTER">
                      <font>
@@ -92,9 +92,9 @@
             </VBox>
          </center>
          <bottom>
-            <HBox prefHeight="50.0" prefWidth="1000.0" style="-fx-background-color: #707070;" alignment="CENTER">
+            <HBox prefHeight="50.0" prefWidth="1000.0" style="-fx-background-color: #4A90E2;" alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" onAction="#logout" prefHeight="35.0" prefWidth="100.0" style="-fx-font-size: 14;" text="Đăng xuất" textFill="WHITE" />
+                  <Button mnemonicParsing="false" onAction="#logout" prefHeight="35.0" prefWidth="100.0" style="-fx-font-size: 14; -fx-text-fill: black;" text="Đăng xuất" textFill="BLACK" />
                </children>
             </HBox>
          </bottom>

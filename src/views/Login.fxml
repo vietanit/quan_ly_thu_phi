@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #e4e4e4;" stylesheets="@../source/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #e8f4f8;" stylesheets="@../source/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
-      <Pane prefHeight="200.0" prefWidth="800.0" style="-fx-background-color: #707070;">
+      <Pane prefHeight="200.0" prefWidth="800.0" style="-fx-background-color: #4A90E2;">
          <children>
             <AnchorPane layoutX="129.0" layoutY="87.0" prefHeight="414.0" prefWidth="547.0" styleClass="pane" stylesheets="@../source/login.css">
                <children>
@@ -39,7 +39,7 @@
                         <Image url="@../source/icon-password.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="212.0" layoutY="71.0" text="LOGIN" textFill="#707070">
+                  <Label layoutX="212.0" layoutY="71.0" text="LOGIN" textFill="#4A90E2" style="-fx-text-fill: #4A90E2;">
                      <font>
                         <Font name="System Bold" size="40.0" />
                      </font>
