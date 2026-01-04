@@ -34,118 +34,104 @@
             </VBox>
          </children>
       </HBox>
-      <VBox spacing="15.0" AnchorPane.topAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.bottomAnchor="60.0">
+      <VBox spacing="12.0" AnchorPane.topAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.bottomAnchor="60.0">
          <children>
-            <HBox spacing="15.0" prefHeight="80.0">
+            <!-- Vertical stack of info cards: Số hộ khẩu, Số nhân khẩu, Số khoản thu, Tổng tiền thu, Tỉ lệ đóng phí -->
+            <Pane prefHeight="70.0" prefWidth="-1" style="-fx-background-color: #4A90E2; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;">
                <children>
-                  <!-- Số hộ khẩu -->
-                  <Pane prefHeight="80.0" prefWidth="180.0" style="-fx-background-color: #4A90E2; -fx-border-radius: 8; -fx-background-radius: 8;">
-                     <children>
-                        <Label layoutX="10.0" layoutY="8.0" text="🏠" textFill="WHITE">
-                           <font>
-                              <Font size="32.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="50.0" layoutY="10.0" text="Số hộ khẩu" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="lbSoHoKhau" layoutX="50.0" layoutY="40.0" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="24.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </Pane>
-                  <!-- Số khoản thu -->
-                  <Pane prefHeight="80.0" prefWidth="180.0" style="-fx-background-color: #50C878; -fx-border-radius: 8; -fx-background-radius: 8;">
-                     <children>
-                        <Label layoutX="10.0" layoutY="8.0" text="💰" textFill="WHITE">
-                           <font>
-                              <Font size="32.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="50.0" layoutY="10.0" text="Số khoản thu" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="lbSoKhoanThu" layoutX="50.0" layoutY="40.0" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="24.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </Pane>
-                  <!-- Số nhân khẩu -->
-                  <Pane prefHeight="80.0" prefWidth="180.0" style="-fx-background-color: #F5A623; -fx-border-radius: 8; -fx-background-radius: 8;">
-                     <children>
-                        <Label layoutX="10.0" layoutY="8.0" text="👥" textFill="WHITE">
-                           <font>
-                              <Font size="32.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="50.0" layoutY="10.0" text="Số nhân khẩu" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="12.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="lbSoNhanKhau" layoutX="50.0" layoutY="40.0" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="24.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </Pane>
+                  <Label layoutX="10.0" layoutY="8.0" text="🏠" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="10.0" text="Số hộ khẩu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbSoHoKhau" layoutX="50.0" layoutY="35.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
                </children>
-            </HBox>
-            <HBox spacing="15.0" prefHeight="80.0">
+            </Pane>
+            <Pane prefHeight="70.0" prefWidth="-1" style="-fx-background-color: #F5A623; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;">
                <children>
-                  <!-- Tổng tiền thu -->
-                  <Pane prefHeight="80.0" prefWidth="180.0" style="-fx-background-color: #BD10E0; -fx-border-radius: 8; -fx-background-radius: 8;">
-                     <children>
-                        <Label layoutX="10.0" layoutY="8.0" text="💵" textFill="WHITE">
-                           <font>
-                              <Font size="32.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="50.0" layoutY="8.0" text="Tổng tiền thu" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="12.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="lbTongTienThu" layoutX="50.0" layoutY="35.0" text="0 đ" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="16.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </Pane>
-                  <!-- Tỉ lệ đóng phí -->
-                  <Pane prefHeight="80.0" prefWidth="180.0" style="-fx-background-color: #E74C3C; -fx-border-radius: 8; -fx-background-radius: 8;">
-                     <children>
-                        <Label layoutX="10.0" layoutY="8.0" text="📊" textFill="WHITE">
-                           <font>
-                              <Font size="32.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="50.0" layoutY="10.0" text="Tỉ lệ đóng phí" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="12.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="lbTiLeDoPhí" layoutX="50.0" layoutY="40.0" text="0%" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="24.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </Pane>
-                  <!-- Placeholder -->
-                  <Pane prefHeight="80.0" prefWidth="180.0" />
+                  <Label layoutX="10.0" layoutY="8.0" text="👥" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="10.0" text="Số nhân khẩu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbSoNhanKhau" layoutX="50.0" layoutY="35.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
                </children>
-            </HBox>
+            </Pane>
+            <Pane prefHeight="70.0" prefWidth="-1" style="-fx-background-color: #50C878; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;">
+               <children>
+                  <Label layoutX="10.0" layoutY="8.0" text="💰" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="10.0" text="Số khoản thu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbSoKhoanThu" layoutX="50.0" layoutY="35.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="70.0" prefWidth="-1" style="-fx-background-color: #BD10E0; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;">
+               <children>
+                  <Label layoutX="10.0" layoutY="8.0" text="💵" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="10.0" text="Tổng tiền thu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbTongTienThu" layoutX="50.0" layoutY="35.0" text="0 đ" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="70.0" prefWidth="-1" style="-fx-background-color: #E74C3C; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;">
+               <children>
+                  <Label layoutX="10.0" layoutY="8.0" text="📊" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="10.0" text="Tỉ lệ đóng phí" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbTiLeDoPhí" layoutX="50.0" layoutY="35.0" text="0%" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
          </children>
       </VBox>
       <Label AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" text="Copyright Nhóm 1" textFill="#999999">
