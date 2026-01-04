@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #e4e4e4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserPaymentController">
+   <children>
+      <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="700.0" prefWidth="1000.0">
+         <top>
+            <VBox prefHeight="60.0" prefWidth="1000.0" style="-fx-background-color: #707070;">
+               <children>
+                  <Label prefHeight="60.0" prefWidth="1000.0" text="Quản Lý Thanh Toán Khoản Phí" textFill="WHITE" alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <VBox prefHeight="640.0" prefWidth="1000.0" spacing="20.0" style="-fx-padding: 20;">
+               <children>
+                  <!-- Filter Section -->
+                  <HBox prefHeight="40.0" prefWidth="1000.0" spacing="30.0" style="-fx-border-color: #d0d0d0; -fx-border-width: 1; -fx-padding: 10;">
+                     <children>
+                        <Label text="Loại khoản phí:" textFill="#707070">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="cbBatBuoc" mnemonicParsing="false" onAction="#applyFilters" text="Bắt buộc" />
+                        <CheckBox fx:id="cbTuNguyen" mnemonicParsing="false" onAction="#applyFilters" text="Tự nguyện" />
+                        <Button mnemonicParsing="false" onAction="#resetFilters" prefHeight="30.0" prefWidth="100.0" text="Xóa bộ lọc" />
+                     </children>
+                  </HBox>
+
+                  <!-- Bảng khoản phí đã đóng -->
+                  <VBox prefHeight="300.0" prefWidth="1000.0" style="-fx-border-color: #d0d0d0; -fx-border-width: 1; -fx-padding: 10;">
+                     <children>
+                        <HBox prefHeight="40.0" prefWidth="960.0" spacing="10.0">
+                           <children>
+                              <Label text="Khoản Phí Đã Đóng:" textFill="#707070">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfSearchPaid" prefHeight="30.0" prefWidth="300.0" promptText="Tìm kiếm theo tên khoản phí..." />
+                              <Button fx:id="btnSearchPaid" mnemonicParsing="false" onAction="#searchPaidFees" prefHeight="30.0" prefWidth="80.0" text="Tìm kiếm" />
+                              <Button fx:id="btnClearPaid" mnemonicParsing="false" onAction="#clearSearchPaid" prefHeight="30.0" prefWidth="80.0" text="Xóa lọc" />
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tablePaidFees" prefHeight="250.0" prefWidth="960.0">
+                           <columns>
+                              <TableColumn fx:id="colPaidMaKhoan" prefWidth="100.0" text="Mã Khoản" />
+                              <TableColumn fx:id="colPaidTenKhoan" prefWidth="250.0" text="Tên Khoản Phí" />
+                              <TableColumn fx:id="colPaidSoTien" prefWidth="120.0" text="Số Tiền" />
+                              <TableColumn fx:id="colPaidLoai" prefWidth="120.0" text="Loại" />
+                              <TableColumn fx:id="colPaidNgayDong" prefWidth="150.0" text="Ngày Đóng" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+
+                  <!-- Bảng khoản phí chưa đóng -->
+                  <VBox prefHeight="300.0" prefWidth="1000.0" style="-fx-border-color: #d0d0d0; -fx-border-width: 1; -fx-padding: 10;">
+                     <children>
+                        <HBox prefHeight="40.0" prefWidth="960.0" spacing="10.0">
+                           <children>
+                              <Label text="Khoản Phí Chưa Đóng:" textFill="#707070">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfSearchUnpaid" prefHeight="30.0" prefWidth="300.0" promptText="Tìm kiếm theo tên khoản phí..." />
+                              <Button fx:id="btnSearchUnpaid" mnemonicParsing="false" onAction="#searchUnpaidFees" prefHeight="30.0" prefWidth="80.0" text="Tìm kiếm" />
+                              <Button fx:id="btnClearUnpaid" mnemonicParsing="false" onAction="#clearSearchUnpaid" prefHeight="30.0" prefWidth="80.0" text="Xóa lọc" />
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tableUnpaidFees" prefHeight="250.0" prefWidth="960.0">
+                           <columns>
+                              <TableColumn fx:id="colUnpaidMaKhoan" prefWidth="100.0" text="Mã Khoản" />
+                              <TableColumn fx:id="colUnpaidTenKhoan" prefWidth="250.0" text="Tên Khoản Phí" />
+                              <TableColumn fx:id="colUnpaidSoTien" prefWidth="120.0" text="Số Tiền" />
+                              <TableColumn fx:id="colUnpaidLoai" prefWidth="120.0" text="Loại" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox prefHeight="50.0" prefWidth="1000.0" style="-fx-background-color: #707070;" alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#logout" prefHeight="35.0" prefWidth="100.0" style="-fx-font-size: 14;" text="Đăng xuất" textFill="WHITE" />
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

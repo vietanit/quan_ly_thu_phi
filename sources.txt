@@ -8,6 +8,7 @@ D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\MainController.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\NhanKhauController.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\NopTienController.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\ThongKeController.java
+D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\UserPaymentController.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\hokhau\AddHoKhau.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\hokhau\UpdateHoKhau.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\controller\khoanthu\AddKhoanThu.java
@@ -23,6 +24,7 @@ D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\KhoanThuModel.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\NhanKhauModel.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\NopTienModel.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\QuanHeModel.java
+D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\UserSession.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\models\UsersModel.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\services\ChuHoService.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\services\HoKhauService.java
@@ -32,3 +34,4 @@ D:\baitaplonnmcnpm\quan-ly-thu-tien\src\services\NhanKhauService.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\services\NopTienService.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\services\QuanHeService.java
 D:\baitaplonnmcnpm\quan-ly-thu-tien\src\services\StringService.java
+D:\baitaplonnmcnpm\quan-ly-thu-tien\src\services\UserPaymentService.java
